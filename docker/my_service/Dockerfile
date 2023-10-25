@@ -6,4 +6,4 @@ RUN git clone -b master https://github.com/pocoproject/poco.git && cd poco && mk
 RUN git clone   https://github.com/RealLoLka/archlab2.git
 RUN sudo ldconfig
 RUN cd archlab2 && mkdir build && cd build && cmake  .. && make
-ENTRYPOINT [ "archlab2/build/archlab2" ]
+ENTRYPOINT [ "archlab2/build/my_service" ]
